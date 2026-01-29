@@ -20,6 +20,8 @@ cd QuickServeApp
 ## 🛠 Frontend Setup
 
 ```
+create .env inside root folder
+VITE_API_BASE_URL=YOUR_BACKEND_URL
 cd frontend
 npm install
 npm run dev
