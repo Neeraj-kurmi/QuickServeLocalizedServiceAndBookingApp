@@ -39,7 +39,6 @@ public class ListingService {
         listing.setDescription(request.getDescription());
         listing.setPrice(request.getPrice());
         listing.setImages(imageUrl);
-        listing.setIsApproved(false); // admin must approve
 
         notificationService.sendNotification(
                 2L, // assume ADMIN_ID = 1 for now
