@@ -92,7 +92,7 @@ public class AdminService {
     }
 
     public List<Listing>findAllPendingListings(){
-        return listingRepository.findByIsApprovedFalse();
+        return listingRepository.findByIsApprovedIsNull();
     }
     public List<Listing>findAllApprovedListings(){
         return listingRepository.findByIsApprovedTrue();
