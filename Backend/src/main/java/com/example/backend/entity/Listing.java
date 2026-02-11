@@ -28,7 +28,7 @@ public class Listing {
     @Column(columnDefinition = "TEXT")
     private String images; // Cloudinary URL
 
-    private Boolean isApproved = false;
+    private Boolean isApproved;
 
     private LocalDateTime createdAt = LocalDateTime.now();
 }
